@@ -140,9 +140,9 @@ export const courseDetails = async (req, res) => {
 };
 
 import Stripe from "stripe";
-import config from "../config.js";
-const stripe = new Stripe(config.STRIPE_SECRET_KEY);
-console.log(config.STRIPE_SECRET_KEY);
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
 export const buyCourses = async (req, res) => {
   const { userId } = req;
   const { courseId } = req.params;
