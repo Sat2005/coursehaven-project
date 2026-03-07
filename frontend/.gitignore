@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -22,3 +23,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+=======
+.env
+ config.js
+.env
+backend/config.js
+backend/config.js
+.env
+.env
+backend/config.js
+>>>>>>> 5468785d864e641edf467a8ab399978f60b6be54

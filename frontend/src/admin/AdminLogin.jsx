@@ -32,7 +32,7 @@ function AdminLogin() {
       console.log("AdminLogin successful: ", response.data);
       navigate("/admin/dashboard");
       toast.success(response.data.message);
-    //   navigate("/admin/dashboard");
+      navigate("/admin/dashboard");
       localStorage.setItem("admin", JSON.stringify(response.data));
     } catch (error) {
       if (error.response) {
